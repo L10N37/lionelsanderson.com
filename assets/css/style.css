@@ -1,0 +1,137 @@
+.projects p {
+  font-size: 24px;
+}
+
+/* Center all elements in main section */
+.projects {
+  display: block;
+  flex-direction: column; /* Stack child elements vertically */
+  align-items: center; /* Center horizontally within the container */
+  justify-content: center; /* Center vertically within the container */
+  padding: 20px;
+  border-bottom: double black;
+}
+
+/* Style for the container around the carousel */
+.splide {
+  background-color: white; /* Add a background color */
+  padding: 20px; /* Add padding around the carousel */
+}
+
+/* Center the child elements horizontally */
+.splide__slide {
+  text-align: center;
+  margin: 20px; /* Add margin around individual carousel items */
+}
+
+/* Optional: Style for the arrows */
+.splide__arrows {
+  margin-top: 20px; /* Add spacing between the carousel and arrows */
+  text-align: center;
+}
+
+.splide__arrow {
+  font-size: 24px; /* Adjust arrow size */
+  color: #333; /* Arrow color */
+  background-color: #fff; /* Arrow background color */
+  border: 1px solid #ddd; /* Add a border to arrows */
+  border-radius: 50%; /* Make arrows circular */
+  padding: 10px; /* Add padding to arrows */
+  margin: 0 10px; /* Add spacing between arrows */
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Hover styles for arrows */
+.splide__arrow:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+
+ 
+ .projects{
+  font-size: 2em;
+  font-weight: bolder;
+  color: black;
+ }
+
+ nameinheader{
+  font-size: 4em;
+  font-weight: bolder;
+ }
+ /* Selfie picture transitions */
+.image-container {
+  position: relative;
+  width: 644px;  /* image(s) width */
+  height: 556px; /* image(s) height */
+  overflow: hidden;
+  margin: 0 auto;  /* Horizontally centers the container */
+  display: block;
+  border-radius: 50%;  /* Makes the image round */
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: opacity 1s;  /* Duration of the fade effect */
+  opacity: 0;
+  justify-content: center;
+}
+
+.slide:first-child {
+  opacity: 1;
+}
+/*  End Selfie picture transitions */
+
+header {
+  position: relative;  /* Added to position the pseudo-element relative to the header */
+  background-color: white;  /* Header BG colour */
+  padding: 20px;
+  text-align: center;  /* Center the content horizontally */
+  border-bottom: double grey 10px;
+}
+
+/* Create a pseudo-element for the background image */
+header::before {
+  content: "";  /* Required for the pseudo-element to be generated */
+  background-image: url('../images/headerBackGround.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 30%;  /* Set the opacity of the background image here (adjust as desired) */
+  
+  /* Position the pseudo-element to fill the header */
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  
+  /* Ensure the pseudo-element stacks below the actual content */
+  z-index: 1;
+}
+
+.header h1 {
+  font-size: 4em;  /* Adjust as needed */
+  margin-bottom: 10px;  /* Space between your name and the title */
+  color: black;
+  z-index: 99;
+}
+
+p {
+  font-size: 1.4em;  /* Adjust as needed */
+  margin-bottom: 10px;  /* Space between paragraphs */
+  color: black;
+}
+
+main {
+  padding: 20px;
+  background-color: white;
+  margin-top: 20px;
+  border-radius: 10px;
+  z-index: 99;
+}
