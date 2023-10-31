@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Placeholder-portfolio-Lionel-Sanderson</title>
+  <!-- CSS -->
+  <link rel="stylesheet" href="./assets/css/reset.css" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="./assets/css/splide.css" />
+  <!-- JS -->
+  <script src="./js/transition.js"></script>
+  <script src="./js/splide.min.js"></script>
+</head>
+
+<body>
+  <header>
+    <nameinheader> Lionel Sanderson </nameinheader>
+    <div class="image-container">
+      <img src="./assets/images/Colour.jpg" alt="Image 1" class="slide">
+      <img src="./assets/images/black_white.jpg" alt="Image 2" class="slide">
+      <img src="./assets/images/sketch.jpg" alt="Image 2" class="slide">
+    </div>
+    <br>
+    <p>Certified Full Stack Developer & Electronic Engineering Enthusiast</p>
+    <p>Proficiency in multiple programming languages</p>
+  </header>
+
+  <main>
+
+    <!-- Personal Projects Carousel -->
+    <projectsWrapper class="projects">
+      <h2>Personal Hobbyist Projects</h2>
+      <section class="splide" id="fullStackCarousel" aria-label="splide-carousel">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <!-- PSXTAL -->
+            <li class="splide__slide">
+                <img src="./assets/images/PSXTAL.png" alt="PSXTAL PCB image">
+                <a href="https://github.com/L10N37/DFO-PS1-PSXTAL">
+                <h3>PSXTAL</h3>
+                <br>
+              </a>
+                <p>
+                  A true multiregion solution for the iconic Playstation 1 console, I coded a simple program using the adafruit library and arduino C++ to sense
+                  a signal pin and switch the frequencies provided to the Graphics Processing Unit dependent on the game region / BIOS region of the console.
+                </p>
+            </li>
+
+            <!-- vajNES-JS -->
+            <li class="splide__slide">
+              <img src="./assets/images/vajNes.png" alt="Screenshot of the VajNES-JS App">
+              <a href="https://l10n37.github.io/VajNES-JS/debug">
+              <h3>VajNES-JS</h3>
+              <br>
+            </a>
+            <p>This project is a work-in-progress Nintendo Entertainment System Emulator. Users can load a game ROM for the system and step through its instructions until 
+              they reach one that hasn't been implemented yet. While doing so, they can observe RAM allocations and multiple register bit updates, with pertinent information 
+              displayed at each step. The screen size can be adjusted, and the emulator can simulate vintage CRT effects. I incorporated transparency using layers and a test image, 
+              enabling users to experience classic CRT television effects such as scanlines and grilles. There's an option to select from various backgrounds; the app saves your 
+              preference locally and retrieves it upon reopening.
+              <br>
+              This emulator is a JavaScript adaptation of a program I initially developed in C++.</p>
+            </li>
+
+            <!-- PS2 batch ISO renamer-->
+            <li class="splide__slide">
+              <img src="./assets/images/ps2renamer.png" alt="PS2 batch ISO renamer photo">
+              <a href="https://github.com/L10N37/PS2-ISO-Batch-Renamer-">
+              <h3>PS2 Batch ISO Renaming Tool</h3>
+              <br>
+            </a>
+            <p>When transferring games from the Playstation 2 to your PC, they typically save under their game ID instead of the game title. My application streamlines this process. 
+              You simply place a provided database text file (which will be updated as needed) in the same directory as my C++ application. The app scans its directory for all ISO files 
+              and generates a 'work list' text file with this data. It then examines specific locations within the ISO files that indicate where the disc's files are located. Subsequently, 
+              the app loads a particular file's contents into RAM as a variable, searches for the GAMEID, references the GAMEID in the database, and renames the ISO file using the corresponding 
+              game title. The program is configured to process and rename up to 1,000 images nearly instantaneously in this manner.
+              <br>
+              Developing this tool necessitated research into the ISO-9660 file system used for optical disc media.</p>
+            </li>
+
+            <!-- UberNee / UberChip-->
+            <li class="splide__slide">
+              <img src="./assets/images/UberNee.png" alt="UberNee PU22 installation photo">
+              <a href="https://github.com/L10N37/tehUberChip_Another_PSX_Modchip">
+              <h3>UberNee / UberChip</h3>
+              <br>
+            </a>
+            <p>UberChip began as a timing-based modchip designed to circumvent the original Sony Playstation's security and region locks. Although there were several iterations, 
+              a timing-based UberChip would achieve, at best, 99% compatibility with the entire software library for the system. I then sought to develop a modchip that would be 
+              fully compatible with the entire software library, but with unique enhancements. This led to the creation of UberNee, a complete rewrite of PSNEE V7 with my personal 
+              improvements. It doesn't waste time during boot-up to verify the system it's installed in, and it provides an additional signal that some systems need. 
+              Users can choose to either wire this up or omit it. Its code is cleaner, more readable, and allows for straightforward adjustments prior to flashing by merely tweaking 
+              a few variables to account for region selection and drive wear levels. UberNee also offers a debug screen, enabling users to monitor events live in a development setting. 
+              The chip is compatible with all console revisions, with extra region unlock features for specific system models with a restricted BIOS. Initially written for the Atmega 328P, 
+              UberNee was later aimed at the LGT8F328P, a more cost-effective alternative at that time. Specific libraries were selected to achieve accurate timing. 
+              The final version is adaptable and can work with either microcontroller. The chip is coded in C++ and utilizes the Arduino IDE. Additionally, there's a PIC version of UberNee 
+              tailored for 12F628A and 12F675 microcontrollers, crafted using the bare assembly language detailed in the datasheet/s. This PIC version also supports the installation of status 
+              LEDs to indicate which of the 3 chip modes is active.</p>
+            </li>
+
+            <!-- SNES IGR -->
+            <li class="splide__slide">
+              <img src="./assets/images/SNES-IGR.png" alt="SNES IGR installation photo">
+              <a href="https://github.com/L10N37/Atmega-SNES-IGR-">
+              <h3>SNES / Super Famicom In Game Reset</h3>
+              <br>
+            </a>
+            <p>I was curious about the communication protocol of the Super Nintendo Entertainment System (SNES) / Super Famicom, so I turned to Google. Using the information I found, without 
+              the need for personal signal analysis, I swiftly wrote a C++ program that enables users to reset the console directly from the controller—a feature absent in the original design. 
+              This functionality proves particularly useful nowadays for multi-game cartridges, allowing users to return to the game selection menu without physically interacting with the console. 
+              I later revised the program to include the option of connecting a few extra wires, which permit toggling between 50/60hz modes and enabling/disabling the onboard CIC chip using 
+              specific controller combinations. The status of the CIC chip is stored in flash RAM until it's modified for subsequent boots. However, the video mode defaults to its native 50hz upon 
+              startup (though this can be altered). This software was developed for the Atmega 168P / 328P microcontroller, changes are easily made using the debug printouts in a development 
+              environment.</p>
+            </li>
+
+            <!-- PS1 IGR -->
+            <li class="splide__slide">
+              <img src="./assets/images/ps1-igr.png" alt="PS1 IGR installation photo">
+              <a href="https://github.com/L10N37/PS1-IGR-in-game-reset-PlayStation-Sony-psone">
+              <h3>PS1 In Game Reset</h3>
+              <br>
+            </a>
+            <p>I wanted the ability to sniff the PS1 communications BUS to detect button presses. While the existing code for a different microcontroller worked well, I found it somewhat convoluted 
+              for its purpose. I developed my own version using an LGT8F328P microcontroller and implemented a bit-banging algorithm to monitor the comms BUS. The code is concise, easily readable, 
+              and adjustments can be made effortlessly using the debug printouts in a development environment. This setup enables the use of two reset combinations available on the Xstation Optical drive Emulator: 
+              a short reset for games and a long reset to return to the game selection menu.</p>
+            </li>
+
+            <!-- Game Of Memory -->
+            <li class="splide__slide">
+              <img src="./assets/images/memorygame.png" alt="memory game screenshot">
+              <a href="https://l10n37.github.io/Game-Of-Memory/">
+              <h3>Game Of Memory</h3>
+              <br>
+            </a>
+            <p>After a class introduced us to some fundamentals—specifically, how to hide and show a flex box card—I realised that was all I needed to develop a memory game. Utilising the principles 
+              taught in that session, I crafted a game that features various difficulty levels and a timer indicating how many attempts remain before it's game over. Admittedly, it might be a tad 
+              challenging right now, and it's possibly a bit unfair that it doesn't reveal the second card selection on a failed attempt. But, the foundational framework is all in place!</p>
+            </li>
+
+
+          </ul>
+        </div>
+        <div class="splide__arrows">
+          <button class="splide__arrow splide__arrow--prev">
+            &lt;==
+          </button>
+          <button class="splide__arrow splide__arrow--next">
+            ==&gt;
+          </button>
+        </div>
+      </section>
+    </projectsWrapper>
+
+    <br>
+    <br>
+    <!-- Fullstack Bootcamp Carousel -->
+    <projectsWrapper class="projects">
+      <h2>Fullstack Bootcamp</h2>
+      <section class="splide" id="hobbyistCarousel" aria-label="splide-carousel">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">
+              <a href="link1.html">
+                <img src="./assets/images/PSXTAL.png" alt="Image 1">
+                <h3>PSXTAL</h3>
+                <br>
+                <p>A true multiregion solution for the iconic Playstation 1 console, I coded a simple program using the adafruit library and arduino C++ to sense
+                  a signal pin and switch the frequencies provided to the Graphics Processing Unit dependent on the game region / BIOS region of the console.
+                </p>
+              </a>
+            </li>
+
+            <li class="splide__slide">
+              <a href="link2.html">
+                <img src="image2.jpg" alt="Image 2">
+                <h3>Title 2</h3>
+                <p>Description 2</p>
+              </a>
+            </li>
+
+            <li class="splide__slide">
+              <a href="link3.html">
+                <img src="image3.jpg" alt="Image 3">
+                <h3>Title 3</h3>
+                <p>Description 3</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+          </ul>
+        </div>
+        <div class="splide__arrows">
+          <button class="splide__arrow splide__arrow--prev">
+            &lt;==
+          </button>
+          <button class="splide__arrow splide__arrow--next">
+            ==&gt;
+          </button>
+        </div>
+      </section>
+    </projectsWrapper>
+  </main>
+
+  <footer>
+
+  </footer>
+
+  <script>
+    // Initialize the Full Stack Bootcamp Carousel
+    new Splide('#fullStackCarousel').mount();
+
+    // Initialize the Personal Hobbyist Programs Carousel
+    new Splide('#hobbyistCarousel').mount();
+  </script>
+
+</body>
+
+</html>
