@@ -147,7 +147,7 @@ header::before {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  opacity: 30%;  /* Set the opacity of the background image here (adjust as desired) */
+  opacity: 28%;  /* Set the opacity of the background image here (adjust as desired) */
   
   /* Position the pseudo-element to fill the header */
   position: absolute;
