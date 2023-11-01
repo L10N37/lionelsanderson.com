@@ -7,7 +7,7 @@
 
 .badge {
   width: 300px; /* or whatever size you want */
-  height: auto;
+  height: 300px;
   padding: 10px;
 }
 
@@ -79,7 +79,7 @@
   overflow: hidden;
   margin: 0 auto;  /* Horizontally centers the container */
   display: block;
-  border-radius: 50%;  /* Makes the image round */
+  border-radius: 3%;  /* Makes the image round */
 }
 
 .slide {
