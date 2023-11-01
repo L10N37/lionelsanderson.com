@@ -58,7 +58,7 @@
             <!-- vajNES-JS -->
             <li class="splide__slide">
               <img src="./assets/images/vajNes.png" alt="Screenshot of the VajNES-JS App">
-              <a href="https://l10n37.github.io/VajNES-JS/debug/">
+              <a href="https://l10n37.github.io/VajNES-JS/debug.html">
               <h3>VajNES-JS</h3>
               <br>
             </a>
@@ -178,134 +178,212 @@
         <div class="splide__track">
           <ul class="splide__list">
 
-            <!-- Janken -->
-            <li class="splide__slide">
-                <img src="./assets/images/janken.png" alt="Janken Screenshot">
-                <a href="https://l10n37.github.io/Janken-/">
-                  <h3>Janken!</h3>
+                        <!-- Janken -->
+                        <li class="splide__slide">
+                            <img src="./assets/images/janken.png" alt="Janken Screenshot">
+                            <a href="https://l10n37.github.io/Janken-/">
+                              <h3>Janken!</h3>
+                              <br>
+                            </a>
+                            <p>Our introduction to JavaScript began with a modest coding challenge: a game of Paper, Scissors, Rock! In Japan, it's called Janken. Given my experience with C++, 
+                              this week of study was a breeze! I decided to enhance the game by adding some graphics.</p>
+                          </a>
+                        </li>
+
+                        <!-- Random Password Generator -->
+                        <li class="splide__slide">
+                          <img src="./assets/images/password.png" alt="Random Password Generator Screenshot">
+                          <a href="https://l10n37.github.io/JS-Password-Generator/">
+                            <h3>Random Password Generator</h3>
+                            <br>
+                          </a>
+                          <p>Another introduction to JavaScript was this password generator. It allows for password generation ranging from 8 to 128 characters. Users have the option to include 
+                            lowercase or uppercase letters, numeric values, and special characters.</p>
+                        </a>
+                      </li>
+
+                      <!-- GitHub Readme Generator -->
+                      <li class="splide__slide">
+                        <img src="./assets/images/readme.png" alt="Readme Generator screenshot">
+                        <a href="https://github.com/L10N37/readme-generator-node-js/">
+                          <h3>GitHub README Generator</h3>
+                          <br>
+                        </a>
+                        <p>This is a GitHub README generator that utilizes NodeJS and Inquirer. The application can be launched directly from Visual Studio Code and includes a 'how-to' video demonstrating 
+                          its use.</p>
+                      </a>
+                    </li>
+
+                    <!-- Tenuto - Spotify API -->
+                    <li class="splide__slide">
+                      <img src="./assets/images/tenuto.png" alt="Tenuto Logo">
+                      <a href="https://l10n37.github.io/Tenuto/">
+                        <h3>Tenuto - powered by spotify API</h3>
+                        <br>
+                      </a>
+                      <p>For this challenge, we were tasked with choosing an API and learning how to use it. Our group, consisting of three members, selected the Spotify API. The core functionality of the 
+                        application was developed by me, Lionel Sanderson. I set a personal challenge to avoid using any global variables, and I succeeded. However, another member introduced one at a later 
+                        stage for reasons that remain unclear. The feature allowing users to shortlist their favorite artists was contributed by Jake. He also added the finishing touches, incorporating various 
+                        effects and selecting the color schemes. The original README was authored by Michael.
+                        The application operates in a series of steps. First, it verifies a legitimate user by sending account credentials; in response, the API issues a temporary token valid upon authentication. 
+                        This token, along with other variables, is relayed from one function to another and repeatedly sent back to the API for validation with each request. Users can select an artist, which the 
+                        application then translates from the searched name into the unique Spotify artist ID. Subsequently, the top 10 songs of that artist can be retrieved. If the artist has made preview snippets 
+                        available, these can also be sampled. Due to Spotify's reliance on IDs instead of names to identify artists, there's a "similar artists" dropdown on the left, this was capped to 10 similar 
+                        artists. This aids users in pinpointing the exact artist they're searching for, especially when artist names can be tricky, such as searching for "pink" when the correct name is "p!nk".</p>
+                    </a>
+                  </li>
+
+                    <!-- Weather Dashboard -->
+                    <li class="splide__slide">
+                      <img src="./assets/images/weather.png" alt="weather dashboard screenshot">
+                      <a href="https://l10n37.github.io/Weather-Dashboard/">
+                        <h3>Weather Dashboard</h3>
+                        <br>
+                      </a>
+                      <p>This served as an introduction to the use of APIs. The project is a straightforward 5-day forecast weather dashboard. It's fully functional and retains your last five location searches locally for convenient reuse.
+                        The application is powered by the OpenWeather API.</p>
+                      </p>
+                    </a>
+                  </li>
+
+                  <!-- SVG Logo Maker-->
+                  <li class="splide__slide">
+                    <img src="./assets/images/shapes.png" alt="svg images from logo maker app">
+                    <a href="https://github.com/L10N37/OOP-SVG-Logo-Maker">
+                      <h3>SVG Logo Maker</h3>
+                      <br>
+                    </a>
+                    <p>This application doesn't launch in a browser; instead, it uses a command-line interface via Node.js and comes with an instructional 'how-to' video. 
+                      Simply follow the prompts: choose your shape, color (every possible CSS color is available from an array, or you can use custom hex codes), and three characters. 
+                      The application then generates an SVG image based on your choices.</p>
+                  </a>
+                </li>
+
+                <!-- Note Taker Express JS-->
+                <li class="splide__slide">
+                  <img src="./assets/images/note_taker.png" alt="note taker app logo">
+                  <a href="https://github.com/L10N37/Express-JS-Backend-Note-Taker">
+                    <h3>Note Taker (ExpressJS)</h3>
+                    <br>
+                  </a>
+                  <p>This application demonstrates the use of Express JS on the backend. We were provided with starter code and tasked with adding backend server functionality. 
+                    The app essentially stores notes on the server-side. Unlike local storage, which, true to its name, confines the user to local storage, this app saves information 
+                    (structured as a JS Object) on a server. It operates similarly to a cloud service, and users cannot delete the information unless specific code for deletion is implemented. 
+                    In this instance, the code has been set up to both add and remove notes. Often, in practical scenarios, you wouldn't permit users to delete certain information (e.g., product reviews). 
+                    A significant advantage of server storage is its global accessibility. The application is live and links can be found in the repository, though it may require multiple refreshes to 
+                    activate it.</p>
+                </a>
+              </li>
+
+              <!-- Daily Planner-->
+              <li class="splide__slide">
+                <img src="./assets/images/scheduler.png" alt="daily scheduler app screenshot">
+                <a href="https://l10n37.github.io/Daily-Planner/">
+                  <h3>Daily Planner</h3>
                   <br>
                 </a>
-                <p>Our introduction to JavaScript began with a modest coding challenge: a game of Paper, Scissors, Rock! In Japan, it's called Janken. Given my experience with C++, 
-                  this week of study was a breeze! I decided to enhance the game by adding some graphics.</p>
+                <p>This application serves as a daily planner. The "past" hours of the day are colored grey, the "present" hour is colored red, and the "future" hours are colored green. 
+                  Notes are saved locally and can be retrieved upon reopening the application. The main challenge was colour-coding the time slots. I devised a function to compare the time slots 
+                  against the current time of day and utilised that function as a parameter in another function.</p>
+                </p>
               </a>
             </li>
 
-            <!-- Random Password Generator -->
+            <!-- Employee Management Database-->
             <li class="splide__slide">
-              <img src="./assets/images/password.png" alt="Random Password Generator Screenshot">
-              <a href="https://l10n37.github.io/JS-Password-Generator/">
-                <h3>Random Password Generator</h3>
+              <img src="./assets/images/employeedatabase.png" alt="employee management database app shot">
+              <a href="https://github.com/L10N37/Employee-Tracker">
+                <h3>Employee Management Database</h3>
                 <br>
               </a>
-              <p>Another introduction to JavaScript was this password generator. It allows for password generation ranging from 8 to 128 characters. Users have the option to include 
-                lowercase or uppercase letters, numeric values, and special characters.</p>
+              <p>This is a database for managing employees, departments, and job roles within an organisation. It allows you to perform various operations such as viewing employees, 
+                adding employees, updating employee information, and more. This is a command line application and the repository contains a 'how to' video on it's use.</p>
+              </p>
             </a>
           </li>
 
-          <!-- GitHub Readme Generator -->
+          <!-- Byte Blogger -->
           <li class="splide__slide">
-            <img src="./assets/images/readme.png" alt="Readme Generator screenshot">
-            <a href="https://github.com/L10N37/readme-generator-node-js/">
-              <h3>GitHub ReadMe Generator</h3>
+            <img src="./assets/images/demo.gif" alt="gif of byteblogger app being used">
+            <a href="https://github.com/L10N37/ByteBlogger/">
+              <h3>ByteBlogger</h3>
               <br>
             </a>
-            <p>This is a GitHub README generator that utilizes NodeJS and Inquirer. The application can be launched directly from Visual Studio Code and includes a 'how-to' video demonstrating 
-              its use.</p>
+            <p>This is a CMS-style blog site, a web application that enables users to create, read, update, and delete blog posts, as well as leave comments on them. It offers a 
+              user-friendly interface for managing blog content. Although the site was previously live, it was taken down due to billing issues. However, you can still set it up 
+              locally for a trial by following the instructions provided in the README. The application utilises nine NPM packages in total.</p>
+            </p>
           </a>
         </li>
 
-        <!-- Tenuto - Spotify API -->
+        <!-- bidwise -->
         <li class="splide__slide">
-          <img src="./assets/images/tenuto.png" alt="Tenuto Logo">
-          <a href="https://l10n37.github.io/Tenuto/">
-            <h3>Tenuto - powered by spotify API</h3>
+          <img src="./assets/images/bidwise.png" alt="bidwise app screenshot">
+          <a href="https://github.com/L10N37/BidWise/">
+            <h3>BidWise</h3>
             <br>
           </a>
-          <p>For this challenge, we were tasked with choosing an API and learning how to use it. Our group, consisting of three members, selected the Spotify API. The core functionality of the 
-            application was developed by me, Lionel Sanderson. I set a personal challenge to avoid using any global variables, and I succeeded. However, another member introduced one at a later 
-            stage for reasons that remain unclear. The feature allowing users to shortlist their favorite artists was contributed by Jake. He also added the finishing touches, incorporating various 
-            effects and selecting the color schemes. The original README was authored by Michael.
-            The application operates in a series of steps. First, it verifies a legitimate user by sending account credentials; in response, the API issues a temporary token valid upon authentication. 
-            This token, along with other variables, is relayed from one function to another and repeatedly sent back to the API for validation with each request. Users can select an artist, which the 
-            application then translates from the searched name into the unique Spotify artist ID. Subsequently, the top 10 songs of that artist can be retrieved. If the artist has made preview snippets 
-            available, these can also be sampled. Due to Spotify's reliance on IDs instead of names to identify artists, there's a "similar artists" dropdown on the left, this was capped to 10 similar 
-            artists. This aids users in pinpointing the exact artist they're searching for, especially when artist names can be tricky, such as searching for "pink" when the correct name is "p!nk".</p>
+          <p>BidWise is a comprehensive desktop and mobile application designed to offer users a platform for online auctions. It allows them to view, bid on a vast array of items, 
+            and even host their own auctions to sell preloved goods. With a convenient and user-friendly interface, it streamlines the buying and selling processes. 
+            The project was a collaborative effort involving a team of four. I conceived the initial idea, initiated the boilerplate, and handled the application setup and configuration. 
+            My contributions included features like live bidding without the need for a refresh and other dynamic elements. I also addressed several bugs and assisted with other features.
+          </p>
         </a>
       </li>
 
-      <!-- Weather Dashboard -->
+      <!-- E Commerce Backend -->
       <li class="splide__slide">
-        <img src="./assets/images/weather.png" alt="weather dashboard screenshot">
-        <a href="https://l10n37.github.io/Weather-Dashboard/">
-          <h3>Weather Dashboard using API</h3>
+        <img src="./assets/images/endpoints.png" alt="E-Commerce app shot">
+        <a href="https://github.com/L10N37/E-commerce-Back-End/">
+          <h3>E-Commerce Backend</h3>
           <br>
         </a>
-        <p>This served as an introduction to the use of APIs. The project is a straightforward 5-day forecast weather dashboard. It's fully functional and retains your last five location searches locally for convenient reuse.
-          The application is powered by the OpenWeather API.</p>
+        <p>An E-Commerce backend utilising RESTful API. The application utlises multiple NPM packages and allows users to create, read, update and delete products, categories and tags. 
+          The application is configured to run on a local server and the repository contains a 'how to' video on it's use.</p>
         </p>
       </a>
     </li>
 
-    <!-- SVG Logo Maker-->
-    <li class="splide__slide">
-      <img src="./assets/images/shapes.png" alt="svg images from logo maker app">
-      <a href="https://github.com/L10N37/OOP-SVG-Logo-Maker">
-        <h3>SVG Logo Maker</h3>
-        <br>
-      </a>
-      <p>This application doesn't launch in a browser; instead, it uses a command-line interface via Node.js and comes with an instructional 'how-to' video. 
-        Simply follow the prompts: choose your shape, color (every possible CSS color is available from an array, or you can use custom hex codes), and three characters. 
-        The application then generates an SVG image based on your choices.</p>
-    </a>
-  </li>
-
-      <!-- Note Taker Express JS-->
+      <!-- Social Network API -->
       <li class="splide__slide">
-        <img src="./assets/images/note_taker.png" alt="note taker app logo">
-        <a href="https://github.com/L10N37/Express-JS-Backend-Note-Taker">
-          <h3>Note Taker (ExpressJS)</h3>
+        <img src="./assets/images/apiroutes.png" alt="social network API app shot">
+        <a href="https://github.com/L10N37/Social-Network-API/">
+          <h3>Social Network API</h3>
           <br>
         </a>
-        <p>This application demonstrates the use of Express JS on the backend. We were provided with starter code and tasked with adding backend server functionality. 
-          The app essentially stores notes on the server-side. Unlike local storage, which, true to its name, confines the user to local storage, this app saves information 
-          (structured as a JS Object) on a server. It operates similarly to a cloud service, and users cannot delete the information unless specific code for deletion is implemented. 
-          In this instance, the code has been set up to both add and remove notes. Often, in practical scenarios, you wouldn't permit users to delete certain information (e.g., product reviews). 
-          A significant advantage of server storage is its global accessibility. The application is live and links can be found in the repository, though it may require multiple refreshes to 
-          activate it.</p>
+        <p>This project provides a RESTful API built using Node.js, Express.js, and MongoDB. It allows users to perform various operations, such as creating users, posting thoughts, 
+          adding reactions, managing friends, and more. The API follows the CRUD (Create, Read, Update, Delete) operations for each resource. The repository contains a 'how to' video
+          on the use of the application</p>
+        </p>
       </a>
     </li>
 
-          <!-- Daily Planner-->
+      <!-- JATE browser based text editor -->
+      <li class="splide__slide">
+        <img src="./assets/images/JATE.png" alt="Jate app shot">
+        <a href="https://github.com/L10N37/JATE-browser-text-editor/">
+          <h3>JATE - Online Text Editor</h3>
+          <br>
+        </a>
+        <p>JATE ('just another text editor') is a text editor web application that allows you to create and edit text documents with offline capabilities using IndexedDB. It provides a simple and intuitive interface 
+          for managing your text files. There is a live demo link in the repository, it can take a few refreshes to wake it up.</p>
+        </p>
+      </a>
+    </li>
+
+          <!-- Demonic Pizza and Pasta -->
           <li class="splide__slide">
-            <img src="./assets/images/scheduler.png" alt="daily scheduler app screenshot">
-            <a href="https://l10n37.github.io/Daily-Planner/">
-              <h3>Daily Planner</h3>
+            <img src="./assets/images/demonic.png" alt="Jate app shot">
+            <a href="https://github.com/L10N37/JATE-browser-text-editor/">
+              <h3>Demonic Pizza & Pasta</h3>
               <br>
             </a>
-            <p>This application serves as a daily planner. The "past" hours of the day are colored grey, the "present" hour is colored red, and the "future" hours are colored green. 
-              Notes are saved locally and can be retrieved upon reopening the application. The main challenge was colour-coding the time slots. I devised a function to compare the time slots 
-              against the current time of day and utilised that function as a parameter in another function.</p>
-               </p>
+            <p>Demonic Pizza & Pasta is a full-stack restaurant ordering app where users can order their favorite pizza or pasta dishes right from their computers. Users can browse through 
+              a menu, customize their orders, add items to their cart, <del>and place their orders</del>. This application is built with a MERN stack and uses React.js, Node.js, Express.js,
+              MongoDB, Apollo Client for state management, GraphQL for APIs and JSON Web Tokens for authentication </p>
+            </p>
           </a>
         </li>
-
-                  <!-- Employee Management Database-->
-                  <li class="splide__slide">
-                    <img src="./assets/images/scheduler.png" alt="daily scheduler app screenshot">
-                    <a href="https://l10n37.github.io/Daily-Planner/">
-                      <h3>Daily Planner</h3>
-                      <br>
-                    </a>
-                    <p>This application serves as a daily planner. The "past" hours of the day are colored grey, the "present" hour is colored red, and the "future" hours are colored green. 
-                      Notes are saved locally and can be retrieved upon reopening the application. The main challenge was colour-coding the time slots. I devised a function to compare the time slots 
-                      against the current time of day and utilised that function as a parameter in another function.</p>
-                       </p>
-                  </a>
-                </li>
-    
-
-
-
 
           </ul>
         </div>
