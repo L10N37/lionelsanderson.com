@@ -8,6 +8,11 @@
   --background-color: #000000;
 }
 
+.splide__progress__bar {
+  height: 3px;
+  background: #ccc;
+}
+
 /* the text under my selfie */
 .highlighted-content{
   background-color: var(--background-color);
@@ -289,11 +294,13 @@ footer {
   .splide__slide {
     margin: 10px; /* Adjusts spacing */
     width: 90%; /* Adjust this value as needed to alter the carousel item size on mobile */
+    
 }
 
 .splide__slide img {
   width: 100%; /* Images will adjust to the size of their container */
   height: auto; /* Keeps the aspect ratio of the image */
   max-width: 80%; /* Ensures the image doesn't overflow its container */
+  
 }
 }
