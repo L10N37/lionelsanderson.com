@@ -1,3 +1,16 @@
+.borderedContent {
+  border: 2px solid black; /* Adjust the border styling as desired */
+  display: inline-block;  /* This makes the div size to its content */
+  padding: 10px;          /* Optional padding for aesthetics */
+  text-align:center;
+}
+
+.badge {
+  width: 300px; /* or whatever size you want */
+  height: auto;
+  padding: 10px;
+}
+
 .projects p {
   font-size: 24px;
 }
@@ -48,8 +61,6 @@
   color: #fff;
 }
 
-
- 
  .projects{
   font-size: 2em;
   font-weight: bolder;
