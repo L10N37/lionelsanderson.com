@@ -146,3 +146,85 @@ main {
   border-radius: 10px;
   z-index: 99;
 }
+
+
+
+/*                             */
+/* Mobile / Tablet resolutions */
+/*                             */
+@media (max-width: 768px) {
+  .borderedContent {
+      padding: 5px;
+  }
+
+  .badge {
+      width: 150px; 
+      height: 150px;
+      padding: 5px;
+  }
+
+  .projects p {
+      font-size: 16px;
+  }
+
+  .projects {
+      padding: 10px;
+  }
+
+  .splide {
+      padding: 10px;
+  }
+
+  .splide__slide {
+      margin: 10px;
+  }
+
+  .splide__arrow {
+      font-size: 16px;
+      padding: 5px;
+      margin: 0 5px;
+  }
+
+  .projects {
+      font-size: 1.5em;
+  }
+
+  nameinheader {
+      font-size: 2em;
+  }
+
+  .image-container {
+      width: 300px;  
+      height: 278px; 
+  }
+
+  header {
+      padding: 10px;
+  }
+
+  .header h1 {
+      font-size: 2em;
+  }
+
+  p {
+      font-size: 1em;  
+      margin-bottom: 5px;  
+  }
+
+  main {
+      padding: 10px;
+      margin-top: 10px;
+  }
+
+  .splide__slide {
+    margin: 10px; /* Adjusts spacing */
+    width: 80%; /* Adjust this value as needed to alter the carousel item size on mobile */
+}
+}
+
+/* Outside of media query, ensuring responsiveness */
+.splide__slide img {
+  width: 20%; /* Images will adjust to the size of their container */
+  height: auto; /* Keeps the aspect ratio of the image */
+  max-width: 25%; /* Ensures the image doesn't overflow its container */
+}
