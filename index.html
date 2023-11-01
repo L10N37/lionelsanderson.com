@@ -12,6 +12,7 @@
   <!-- JS -->
   <script src="./js/transition.js"></script>
   <script src="./js/splide.min.js"></script>
+  <script src="./js/splide-extension-auto-scroll.min.js"></script>
 </head>
 
 <body>
@@ -23,23 +24,29 @@
       <img src="./assets/images/sketch.jpg" alt="Image 2" class="slide">
     </div>
     <br>
-    <p>Certified Full Stack Developer & Electronic Engineering Enthusiast</p>
-    <p>Proficiency in multiple programming languages</p>
+    <div class="highlighted-content">
+      <p id="white">Certified Full Stack Developer & Electronic Engineering Enthusiast <br>
+      Proficiency in multiple programming languages</p>
+  </div>  
   </header>
 
   <main>
 
     <!-- Personal Projects Carousel -->
     <projectsWrapper class="projects">
+      <div class="center-container">
 <div class="borderedContent">
       <h2>Personal Projects</h2>
   <!--- GitHub Badge -->
   <a href="https://github.com/L10N37/">
       <img src="./assets/images/githubBadge.png" alt="Monash FullStack Bootcamp Badge" class="badge">
   </a>
+  </div>
 </div>
+<br>
+<br>
   <!-- GitHub Badge End -->
-      <section class="splide" id="fullStackCarousel" aria-label="splide-carousel">
+      <section class="splide" id="hobbyistCarousel" aria-label="splide-carousel">
         <div class="splide__track">
           <ul class="splide__list">
             <!-- PSXTAL -->
@@ -164,8 +171,13 @@
 
     <br>
     <br>
+    <br>
+    <br>
+    <br>
+    <br>
     <!-- Fullstack Bootcamp Carousel -->
     <projectsWrapper class="projects" id="topborder">
+      <div class="center-container">
 <div class="borderedContent">
       <h2>Fullstack Bootcamp</h2>
       <!-- Monash Badge -->
@@ -173,8 +185,11 @@
         <img src="./assets/images/Bootcamp_Badge.png" alt="Monash FullStack Bootcamp Badge" class="badge">
     </a>
 </div>
+</div>
+<br>
+<br>
     <!-- Monash Badge End -->
-      <section class="splide" id="hobbyistCarousel" aria-label="splide-carousel">
+      <section class="splide" id="fullStackCarousel" aria-label="splide-carousel">
         <div class="splide__track">
           <ul class="splide__list">
 
@@ -415,13 +430,7 @@
     </div>
 </footer>
 
-  <script>
-    // Initialize the Full Stack Bootcamp Carousel
-    new Splide('#fullStackCarousel').mount();
-
-    // Initialise the Personal Hobbyist Programs Carousel
-    new Splide('#hobbyistCarousel').mount();
-  </script>
+<script src="./js/splide.js"></script>
 
 </body>
 
