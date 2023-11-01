@@ -1,7 +1,4 @@
 /* Color Variables */
-.splide{
-  border: solid black;
-}
 
 :root {
   --primary-color: #909090;
@@ -58,8 +55,14 @@
 
 /* Style for the container around the carousel */
 .splide {
-  background-color: var(--primary-color); /* Add a background color */
+  background-color: var(--primary-color); /* Background of carousel */
   padding: 20px; /* Add padding around the carousel */
+  border-top: none; /* Remove top border */
+  border-left: none; /* Remove left border */
+  border-right: none; /* Remove right border */
+  border-bottom: solid var(--background-color);
+  border-bottom-left-radius: 10px; /* Add border radius to bottom-left corner */
+  border-bottom-right-radius: 10px; /* Add border radius to bottom-right corner */
 }
 
 /* Center the child elements horizontally */
