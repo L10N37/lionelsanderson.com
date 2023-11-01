@@ -31,7 +31,9 @@
 .borderedContent {
   display: inline-block;  /* This makes the div size to its content */
   padding: 10px;          /* Optional padding for aesthetics */
+  margin-top: 30px;
   text-align:center;
+  border-bottom: dotted var(--background-color);
 }
 
 .badge {
